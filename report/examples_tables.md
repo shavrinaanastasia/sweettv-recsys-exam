@@ -8,7 +8,7 @@
 | M3 PPR | **2400480** | **240081** | **12002955** | **2400508** | **20088** | 1.000 |
 | Hybrid (fixed) | **2400480** | **12002955** | **240081** | **20088** | 12002896 | 0.800 |
 | **Final: re-ranker** | **2400480** | **240081** | **12002955** | **20088** | 12002896 | 0.800 |
-Table 4: Heavy viewer, user 8377619604347126107 (179 airings watched ≥ 80% in weeks 11-20, 22 distinct programmes).
+Table 2: Heavy viewer, user 8377619604347126107 (179 airings watched ≥ 80% in weeks 11-20, 22 distinct programmes).
 
 | Method | #1 | #2 | #3 | #4 | #5 | AP@5 |
 |---|---|---|---|---|---|---|
@@ -20,7 +20,7 @@ Table 4: Heavy viewer, user 8377619604347126107 (179 airings watched ≥ 80% in 
 | M3 PPR | **2400480** | 6500479 | **20088** | 400363 | 90021962 | 0.333 |
 | Hybrid (fixed) | **2400480** | **20088** | 6500479 | 240081ⁿ | 2400508 | 0.400 |
 | **Final: re-ranker** | **2400480** | **20088** | 2400508 | 240081ⁿ | 6500479 | 0.400 |
-Table 5: Light viewer, user 2593914277176566399 (17 airings watched ≥ 80% in weeks 11-20, 13 distinct programmes).
+Table 3: Light viewer, user 2593914277176566399 (17 airings watched ≥ 80% in weeks 11-20, 13 distinct programmes).
 
 | tv_show_id | Title (from schedule) | Category | tv_show_id | Title (from schedule) | Category |
 |---|---|---|---|---|---|
@@ -34,4 +34,4 @@ Table 5: Light viewer, user 2593914277176566399 (17 airings watched ≥ 80% in w
 | 2400480 | 'ТСН. Неделя'. | Инфо | 90072234 | Х/ф 'Социальная сеть'. | Фильмы |
 | 2400508 | Сегодня. Итоги с Олегом Панютой. | Инфо | 90077275 | Х/ф 'Миллион способов потерять голову'. | Фильмы |
 | 2500261 | Подробности недели. | Инфо | 90079862 | Х/ф 'Глубоководный горизонт'. | Фильмы |
-Table 6: Titles and categories of every programme id in Tables 4-5, looked up from the schedule.
+Table 4: Titles and categories of every programme id in Tables 2-3, looked up from the schedule.

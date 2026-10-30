@@ -46,12 +46,25 @@ python prep.py          # CSV -> parquet cache (~40 s)
 python eda.py           # results/eda.json
 python join.py          # view x airing join (~12 s), results/join_stats.json
 python validate.py pop hist cbf ppr als als2 als3   # grids, appends results/val_runs.log
-python hybrid.py        # fusion weights on half A -> results/hybrid_val.json
+python hybrid.py        # fusion weights on half A (run 1, the one used) -> results/hybrid_val.json
 python predict.py       # one submission per method + fixed-weight hybrid
-python rerank.py val 150 && python rerank.py test 150   # re-ranker validation + final submission
-python examples.py      # two example users -> results/examples.md
+python rerank.py val 50 # re-ranker validation, 50 candidates  -> results/rerank_val_n50.json
+python rerank.py val 150    # 150 candidates -> results/rerank_val_n150.json; choice in results/rerank_choice.json
+python rerank.py test 150   # final submission -> submissions/submission_rerank.csv
+python examples.py      # two example users -> results/examples.json / .md
 python checks.py        # sanity checks -> results/checks.json
+python report_stats.py  # graph density, titles per id, cold start, 0.8-cut sensitivity -> results/report_stats.json
+python hours.py         # viewing seconds by hour -> results/viewing_by_hour.json
+python figures.py       # report/fig_screen_time.png, report/fig_scores.png
+python example_tables.py    # report/examples_tables.md (Tables 2-4 of the report)
+python build_report.py  # report/shavrina_anastasia_exam_report.pdf from report/report_text.md + my_sections.md
 ```
+
+Notes: `python hybrid.py wide` reproduces the discarded second weight search but **overwrites**
+`results/hybrid_val.json`, which `rerank.py` reads — run plain `python hybrid.py` again afterwards.
+In the committed `results/rerank_val_n150.json` / `rerank_test.json` the key `..._candidate_recall@50` holds
+recall at 150 candidates (key name fixed in the code afterwards; values unchanged).
+`build_report.py` uses the Windows fonts Calibri and Consolas.
 
 Environment: Windows 11, Python 3.11.9, 8 logical CPUs, 16 GB RAM. Seeds: ALS 42, user A/B split 0, LightGBM 42
 (deterministic mode). Runtimes are logged in the `results/*.json` files.
@@ -63,7 +76,8 @@ src/          prep, eda, join, common (labels, pool, MAP@5), methods (ALS, CBF, 
               rerank, predict, examples, checks
 results/      every logged experiment, Kaggle score export, sanity checks
 submissions/  all submitted files; submission_rerank.csv is the designated final one
-notes/        competition label definition (paraphrased from the Data tab)
+notes/        competition label definition (paraphrased from the Data tab), reference verification record
+report/       report source (report_text.md, my_sections.md), figures, final PDF
 ```
 
 ## AI assistance

@@ -1,0 +1,19 @@
+{
+ "coview_graph_items_total": 9671,
+ "coview_graph_items_with_any_viewer_11_20": 2902,
+ "coview_graph_edge_density_among_those": 0.7109,
+ "ids_with_more_than_one_title": 4351,
+ "distinct_titles_id_12002955": 207,
+ "distinct_titles_id_2400480": 4,
+ "test_users": 1260,
+ "test_users_zero_ge08_programmes": 4,
+ "test_users_lt5_ge08_programmes": 19,
+ "pairs_total": 3014129,
+ "pairs_ge": {
+  "0.7": 712342,
+  "0.75": 663180,
+  "0.8": 615979,
+  "0.85": 571216,
+  "0.9": 526610
+ }
+}

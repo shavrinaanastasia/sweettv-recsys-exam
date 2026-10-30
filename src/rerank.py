@@ -108,13 +108,13 @@ if __name__ == "__main__":
     fit_u = np.array(sorted(lab_fit))
     cand_f, X_f, y_f = build(td_fit, air, n_i, fit_u, lab_fit)
     info = {"mode": mode, "fit_split": fit_split, "fit_users": len(fit_u),
-            "fit_candidate_recall@50": recall_at_n(cand_f, lab_fit, fit_u)}
+            f"fit_candidate_recall@{N_CAND}": recall_at_n(cand_f, lab_fit, fit_u)}
     print(info, flush=True)
 
     if mode == "val":
         import validate as V  # same validation users, A/B split and labels as every other method
         cand_v, X_v, _ = build(V.td, air, n_i, V.eval_u)
-        info["val_candidate_recall@50"] = recall_at_n(cand_v, V.labels, V.eval_u)
+        info[f"val_candidate_recall@{N_CAND}"] = recall_at_n(cand_v, V.labels, V.eval_u)
         info["configs"] = {}
         for cfg in CONFIGS:
             model = fit(X_f, y_f, cfg)

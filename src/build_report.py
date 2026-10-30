@@ -1,4 +1,4 @@
-﻿"""Build the report PDF from report/report_text.md with reportlab, styled after the course's
+"""Build the report PDF from report/report_text.md with reportlab, styled after the course's
 sample_homework.pdf (Calibri, blue section headings, italic centred title block, bold labels
 on their own line, blue banded tables, italic "Figure N:" captions).
 
@@ -35,20 +35,20 @@ registerFontFamily("Cal", normal="Cal", bold="Cal-B", italic="Cal-I", boldItalic
 BLUE = colors.HexColor("#2F5496")      # Word "Heading 1" blue, as in the sample
 GRID = colors.HexColor("#8EAADB")
 BAND = colors.HexColor("#D9E2F3")
-BASE = 9.5
+BASE = 9.2
 S = {  # headings and labels keep with the following block, so none is left alone at a page bottom
     "title": ParagraphStyle("title", fontName="Cal-B", fontSize=17, leading=21, alignment=TA_CENTER, spaceAfter=6),
     "meta": ParagraphStyle("meta", fontName="Cal-I", fontSize=9.5, leading=12, alignment=TA_CENTER),
-    "h2": ParagraphStyle("h2", fontName="Cal-B", fontSize=14, leading=17, textColor=BLUE, spaceBefore=9, spaceAfter=3),
-    "h3": ParagraphStyle("h3", fontName="Cal-B", fontSize=11.5, leading=14, textColor=BLUE, spaceBefore=6, spaceAfter=2),
+    "h2": ParagraphStyle("h2", fontName="Cal-B", fontSize=14, leading=17, textColor=BLUE, spaceBefore=7, spaceAfter=2),
+    "h3": ParagraphStyle("h3", fontName="Cal-B", fontSize=11.5, leading=14, textColor=BLUE, spaceBefore=4, spaceAfter=1),
     "label": ParagraphStyle("label", fontName="Cal-B", fontSize=BASE, leading=BASE + 2.6, spaceBefore=3, spaceAfter=1),
-    "p": ParagraphStyle("p", fontName="Cal", fontSize=BASE, leading=BASE + 2.6, alignment=TA_LEFT, spaceAfter=4),
+    "p": ParagraphStyle("p", fontName="Cal", fontSize=BASE, leading=BASE + 2.6, alignment=TA_LEFT, spaceAfter=3),
     "li": ParagraphStyle("li", fontName="Cal", fontSize=BASE, leading=BASE + 2.6, leftIndent=14, bulletIndent=4,
                          spaceAfter=1.5),
     "cap": ParagraphStyle("cap", fontName="Cal-I", fontSize=9, leading=11, alignment=TA_LEFT, spaceBefore=2,
                           spaceAfter=6),
-    "cell": ParagraphStyle("cell", fontName="Cal", fontSize=8.3, leading=9.8),
-    "cellb": ParagraphStyle("cellb", fontName="Cal-B", fontSize=8.3, leading=9.8),
+    "cell": ParagraphStyle("cell", fontName="Cal", fontSize=8, leading=9.2),
+    "cellb": ParagraphStyle("cellb", fontName="Cal-B", fontSize=8, leading=9.2),
     "ref": ParagraphStyle("ref", fontName="Cal", fontSize=9.5, leading=12, spaceAfter=5),
 }
 for k in ("h2", "h3", "label"):
@@ -79,10 +79,19 @@ def table(lines):
     plain = lambda c: re.sub(r"[*`]", "", c)
     longest = [min(max(len(plain(r[j])) for r in rows), 60) + 4 for j in range(len(rows[0]))]
     usable = A4[0] - 4.0 * cm
-    t = Table(data, repeatRows=1, hAlign="LEFT", colWidths=[usable * w / sum(longest) for w in longest])
+    widths = [usable * w / sum(longest) for w in longest]
+    # never narrower than the longest single word, so ids and categories do not break mid-word
+    word = [max(pdfmetrics.stringWidth(w, "Cal-B", 8) for r in rows for w in plain(r[j]).split() or [""]) + 8
+            for j in range(len(rows[0]))]
+    short = [max(0.0, word[j] - widths[j]) for j in range(len(widths))]
+    if sum(short):
+        slack = [max(0.0, widths[j] - word[j]) for j in range(len(widths))]
+        take = sum(short) / max(sum(slack), 1e-9)
+        widths = [max(word[j], widths[j] - slack[j] * take) for j in range(len(widths))]
+    t = Table(data, repeatRows=1, hAlign="LEFT", colWidths=widths)
     style = [("GRID", (0, 0), (-1, -1), 0.5, GRID), ("LINEBELOW", (0, 0), (-1, 0), 1.5, colors.HexColor("#4472C4")),
-             ("VALIGN", (0, 0), (-1, -1), "TOP"), ("TOPPADDING", (0, 0), (-1, -1), 1.5),
-             ("BOTTOMPADDING", (0, 0), (-1, -1), 1.5), ("LEFTPADDING", (0, 0), (-1, -1), 3),
+             ("VALIGN", (0, 0), (-1, -1), "TOP"), ("TOPPADDING", (0, 0), (-1, -1), 1),
+             ("BOTTOMPADDING", (0, 0), (-1, -1), 1), ("LEFTPADDING", (0, 0), (-1, -1), 3),
              ("RIGHTPADDING", (0, 0), (-1, -1), 3)]
     style += [("BACKGROUND", (0, r), (-1, r), BAND) for r in range(1, len(rows), 2)]
     t.setStyle(TableStyle(style))

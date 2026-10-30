@@ -24,7 +24,7 @@ for n, (role, e) in enumerate(ex.items(), start=1):
             c = str(d["tv_show_id"]) + ("" if d["in_train_history"] else "ⁿ")
             cells.append(f"**{c}**" if d["in_actual"] else c)
         out.append(f"| {short[m]} | " + " | ".join(cells) + f" | {r['AP@5']:.3f} |")
-    out.append(f"Table {n + 3}: {role.split()[0].capitalize()} viewer, user {e['user_id']} "
+    out.append(f"Table {n + 1}: {role.split()[0].capitalize()} viewer, user {e['user_id']} "
                f"({e['train_airings_watched_ge_0_8']} airings watched ≥ 80% in weeks 11-20, "
                f"{e['distinct_programmes_watched_ge_0_8']} distinct programmes).")
     out.append("")
@@ -36,6 +36,6 @@ out.append("|---|---|---|---|---|---|")
 for a, b in zip(ids[:half], ids[half:] + [None]):
     right = f"{b} | {titles[b][0]} | {titles[b][1]}" if b else " | | "
     out.append(f"| {a} | {titles[a][0]} | {titles[a][1]} | {right} |")
-out.append("Table 6: Titles and categories of every programme id in Tables 4-5, looked up from the schedule.")
+out.append("Table 4: Titles and categories of every programme id in Tables 2-3, looked up from the schedule.")
 (ROOT / "report" / "examples_tables.md").write_text("\n".join(out) + "\n", encoding="utf-8")
 print("\n".join(out))

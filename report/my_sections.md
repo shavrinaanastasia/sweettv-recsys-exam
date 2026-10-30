@@ -19,7 +19,7 @@ Content filtration is somehow worse than popularity: 0.18 VS 0.22. It is probabl
 
 The best signal here is channel exposure (the info which channels this user regularly watches). If we delete it, our hybrid model quality will drop significantly: 0.019 MAP@5. As I already said it is because people usually come after work and turn on their favourite channels (same time, same channel). 
 
-That is why I've chosen a hybrid model with user history, popularity, ALS, PPR, content metadata and channel exposure. On validation my model gets MAP@5 =0.35, on Kaggle private 0.43. 
+That is why I've chosen a hybrid model with user history, popularity, ALS, PPR, content metadata and channel exposure + a LightGBM re-ranker on top. On validation my model gets MAP@5 =0.35, on Kaggle private 0.43. It is also cheap to compute at this scale: the whole test run takes about 3 minutes on an ordinary 8-core CPU.
 
 But this method is not perfect because only 10.8% of the timetable has tv_show_id != 0. And also watching != being interested and != liking. So we predict that a person will watch something, not that they will like it. 
 

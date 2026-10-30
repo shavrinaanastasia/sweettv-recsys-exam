@@ -17,7 +17,7 @@ Let's also compare the methods: popularity already has a good result because a l
 
 Content filtration is somehow worse than popularity: 0.18 VS 0.22. It is probably due to the fact that the similarity between genres and metadata does not indicate than a person will watch both because they can be on different channels and aat different time. People usually watch TV in the evening, so if the other show is in the morning, they won't see it.
 
-The best signal here is channel exposure (the info which channels this user regularly watches). If we delete it, our hybrid model quality will drop significantly: 0.019 MAP@5. As I already said it is because people usually come after work and turn on their favourite channels (same time, same channel). 
+The best signal here is channel exposure (the info which channels this user regularly watches). If we delete it, our hybrid model quality will drop by 0.019 MAP@5 (on half B). As I already said it is because people usually come after work and turn on their favourite channels (same time, same channel). 
 
 That is why I've chosen a hybrid model with user history, popularity, ALS, PPR, content metadata and channel exposure + a LightGBM re-ranker on top. On validation my model gets MAP@5 =0.35, on Kaggle private 0.43. It is also cheap to compute at this scale: the whole test run takes about 3 minutes on an ordinary 8-core CPU.
 
@@ -35,7 +35,7 @@ Log excerpts:
 
 ### 5.3 What worked, what surprised me, next step
 
-1) the validation is correct (80% threshold + check on the future weeks). The ranking of the algorithms is the same as the Kaggle private one.
+1) the validation seems reliable (80% threshold + check on the future weeks). The ranking of the algorithms is the same as the Kaggle private one.
 
 2) those 89% of the data without tv_show_id where not thrown away: I used it for channel exposure. It was very helpful. 
 

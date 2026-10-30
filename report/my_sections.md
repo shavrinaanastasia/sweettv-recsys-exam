@@ -21,13 +21,17 @@ The best signal here is channel exposure (the info which channels this user regu
 
 That is why I've chosen a hybrid model with user history, popularity, ALS, PPR, content metadata and channel exposure + a LightGBM re-ranker on top. On validation my model gets MAP@5 =0.35, on Kaggle private 0.43. It is also cheap to compute at this scale: the whole test run takes about 3 minutes on an ordinary 8-core CPU.
 
-But this method is not perfect because only 10.8% of the timetable has tv_show_id != 0. And also watching != being interested and != liking. So we predict that a person will watch something, not that they will like it. 
+But this method is not perfect because only 10.8% of the timetable has tv_show_id != 0. And also watching != being interested and != liking. So we predict that a person will watch something, not that they will like it. Also, if a programme is absent from the log, it does not mean the user never saw it: the log covers only this platform.
 
 ### 5.2 Failure case, root cause, fix
 
 The biggest technical problem was with the Personalized PageRank. At first, the validation was 452.8s, but it was too long for finding hyperparameters. So I changed it to 50 strongest connections in the graph, but MAP@5 dropped from 0.32 to 0.28. The problem was in the graph structure: it was almost dense, 71% pairs of the programs (among the 2,902 programs that had any viewer in weeks 11-20) shared a user. That's why we didn't get big advantage. And also for PageRank weak connection also have some useful info and we deleted it. In the end, I decided to use the whole graph, but add dense matrix float32 and optimized multiplication (BLAS). The MAP@5 didn't drop and the time became 141s.
 
 There was also a small problem with LightGBM: the first reranking didn't work because of the dependancy on scikit-learn. I moved to API lgb.train.
+
+Log excerpts:
+- `results/val_run1_stopped.log`: `"method": "ppr", "params": {"restart": 0.15, "min_sec": 300}, "seconds": 452.8`
+- `results/rerank_val_console_failed_sklearn.log`: `lightgbm.basic.LightGBMError: scikit-learn is required for lightgbm.sklearn.`
 
 ### 5.3 What worked, what surprised me, next step
 
@@ -48,6 +52,6 @@ There was also a small problem with LightGBM: the first reranking didn't work be
 - **Tool:** Claude Code in the Claude desktop app, model Claude Opus 5.5 (`claude-opus-5-5`); one continuous session, exported unmodified as the attached session log.
 - **How AI was used:** reading the exam brief, slides and course guidelines (docs); planning; writing all code in `src/` (code generation); running every experiment, and the Kaggle submissions after my explicit approval; debugging (PPR runtime, LightGBM wrapper error, memory blow-up in a feature); searching and checking references (search); figures (viz); drafting this report and the README.
 - **What I personally verified:** hand-computed AP@5 for two lists — the heavy viewer's popularity list (0.6433, Table 2) and the light viewer's final re-ranker list (0.4, Table 3), both matching the code (Figure 3); re-ran `src/checks.py` and got output identical to `results/checks.json`; re-ran the final model from scratch (`python rerank.py test 150`) and got a byte-identical `submission_rerank.csv` (same SHA-256, `results/reproduction_check.md`); compared all six Kaggle scores on the Submissions page with Table 1; read the label recipe on the competition's Data tab and compared it with §3; opened the reference links and checked titles, authors and years; checked the submission file format against Kaggle's template; opened the repository while logged out to confirm it is public.
-- **What I trusted without verification:** methods implementation, scoring, data analysis.
+- **What I trusted without verification:** methods implementation; the scoring code beyond the two hand-checked AP@5 values; the data analysis beyond the re-run checks.
 - **Reference check:** every reference was checked against Crossref metadata or the publisher's page on 2026-10-30 (`notes/reference_check.md`); the 1999 PageRank technical report was dropped because its server returned an error.
 - **Session log:** the attached session export is the audit trail for all of the above.

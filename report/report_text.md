@@ -80,7 +80,9 @@ Table 1: MAP@5. Validation = train 11-20, labels 21-30; Kaggle = train 11-30, hi
 
 **Tuning record.** ALS took three grids: the best point sat on the grid edge twice (α = 5, then λ = 10), so the grid was extended until an interior optimum appeared (λ = 30 beats 10 and 100; 16 factors beat 32 at λ = 10 and 8 at λ = 30). Weighting ALS by watched seconds instead of ≥ 0.8 counts collapsed MAP to 0.02-0.06, plausibly because short zapping visits then dominate the confidence matrix (not tested further). All grid points are logged in `results/val_runs.log` and `results/val_log_*.json`, including the losing ones.
 
-**Verification.** (i) MAP@5 code reproduces the course slide's worked example (AP = 0.917 and 0.533). (ii) One user-airing overlap recomputed from the raw CSV with the standard `csv` module equals the join output (5,973 s of a 6,000 s film). (iii) All 4,030 validation label sets contain 5 distinct programmes, each watched ≥ 0.8 in weeks 21-30. (iv) ALS objective decreases every iteration (49,593 → 26,627 over 6 iterations). (v) PPR transition rows sum to 1, and each user's score vector keeps total mass 1. (vi) Each submission file has 1,260 rows, five distinct non-zero ids from the test-week pool, and was scored COMPLETE by Kaggle. (vii) The dense and sparse PPR implementations return the identical score (A = 0.32295) on the same graph. (viii) I computed AP@5 by hand for the heavy viewer's popularity list (Table 4), using AP@5 = (1 / min(5, |R|)) · Σₖ P@k · rel(k): the hits are at ranks 1, 3, 4 and 5 and |R| = 5, so AP@5 = (1/5)(1 + 2/3 + 3/4 + 4/5) = 0.6433, the same value the code reports (`results/examples.json`). Sources: `results/checks.json`, `src/checks.py`.
+**Verification.** (i) MAP@5 code reproduces the course slide's worked example (AP = 0.917 and 0.533). (ii) One user-airing overlap recomputed from the raw CSV with the standard `csv` module equals the join output (5,973 s of a 6,000 s film). (iii) All 4,030 validation label sets contain 5 distinct programmes, each watched ≥ 0.8 in weeks 21-30. (iv) ALS objective decreases every iteration (49,593 → 26,627 over 6 iterations). (v) PPR transition rows sum to 1, and each user's score vector keeps total mass 1. (vi) Each submission file has 1,260 rows, five distinct non-zero ids from the test-week pool, and was scored COMPLETE by Kaggle. (vii) The dense and sparse PPR implementations return the identical score (A = 0.32295) on the same graph. (viii) I computed AP@5 by hand for the heavy viewer's popularity list (Table 4), using AP@5 = (1 / min(5, |R|)) · Σₖ P@k · rel(k): the hits are at ranks 1, 3, 4 and 5 and |R| = 5, so AP@5 = (1/5)(1 + 2/3 + 3/4 + 4/5) = 0.6433, the same value the code reports (`results/examples.json`); my working is shown in Fig. 3. Sources: `results/checks.json`, `src/checks.py`.
+
+![Fig. 3. My hand calculation of AP@5 for the heavy viewer's popularity list (photo, cropped).](hand_check_ap5.png){w=8.5}
 
 ### 4.1 Recommendation examples
 
@@ -90,7 +92,7 @@ Users were chosen by a fixed rule, not by inspecting results: among validation u
 
 ### 4.2 Kaggle submission
 
-![Fig. 3. Kaggle Submissions page (late submissions, account Maizawitch). Designated final submission: submission_rerank.csv, returned private score 0.43344, public 0.43978. The popularity submission (private 0.28773) is below the visible area; all six scores are in Table 1 and results/kaggle_submissions.csv.](kaggle_screenshot.png){w=15}
+![Fig. 4. Kaggle Submissions page (late submissions, account Maizawitch). Designated final submission: submission_rerank.csv, returned private score 0.43344, public 0.43978. The popularity submission (private 0.28773) is below the visible area; all six scores are in Table 1 and results/kaggle_submissions.csv.](kaggle_screenshot.png){w=11.5}
 
 The designated final submission is `submissions/submission_rerank.csv` (ref 57803755), chosen on validation before its Kaggle score was known.
 

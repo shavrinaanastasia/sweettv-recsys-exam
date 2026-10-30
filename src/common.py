@@ -96,8 +96,9 @@ def make_train(ua, air, uc, n_users, n_items, split, half_life=4.0):
 
 
 def popularity_scores(td: TrainData):
-    """Number of distinct users who watched (>= 0.8) the programme in the train weeks,
-    recency-weighted, among programmes that air in the target weeks."""
+    """Recency-weighted number of airings watched (>= 0.8) by all users in the train weeks,
+    among programmes that air in the target weeks. ((cnt_decay > 0) * cnt_decay == cnt_decay,
+    so this is the column sum of decayed counts, not a count of distinct users.)"""
     users_per_item = np.asarray((td.cnt_decay > 0).multiply(td.cnt_decay).sum(axis=0)).ravel()
     s = np.full(td.n_items, -np.inf, np.float32)
     s[td.pool] = users_per_item[td.pool]

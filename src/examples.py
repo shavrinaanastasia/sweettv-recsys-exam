@@ -33,7 +33,21 @@ norm = {k: H.normalise(S, td) for k, S in comps.items()}
 weights = json.loads((RES / "hybrid_val.json").read_text(encoding="utf-8"))["hybrid"]["weights"]
 variants = {"popularity": {"popularity": 1.0}, "history (reference)": {"history": 1.0},
             "M1 ALS": {"als": 1.0}, "M2 content-based": {"cbf": 1.0}, "M3 PPR": {"ppr": 1.0},
-            "hybrid (final)": weights}
+            "fixed-weight hybrid": weights}
+
+# Final strategy: re-ranker, fitted exactly as in its validation (history 11-15 -> labels 16-20).
+import rerank as RR
+from common import SPLITS, build_labels, make_train
+
+choice = json.loads((RES / "rerank_choice.json").read_text(encoding="utf-8"))
+RR.N_CAND = choice["n_cand"]
+td_fit = make_train(V.ua, air, V.uc, len(users), len(items), "fit_val")
+lab_fit = build_labels(V.ua, SPLITS["fit_val"][1])
+fit_u = np.array(sorted(lab_fit))
+_, X_f, y_f = RR.build(td_fit, air, len(items), fit_u, lab_fit)
+model = RR.fit(X_f, y_f, choice["config"])
+cand_e, X_e, _ = RR.build(td, air, len(items), eu)
+rerank_top5 = RR.rerank_top5(model, cand_e, X_e)
 meta = air.sort_values("start").groupby("i").last()
 
 
@@ -56,9 +70,12 @@ for row, (role, u) in enumerate(chosen.items()):
               f"in weeks 11-20, {entry['distinct_programmes_watched_ge_0_8']} distinct programmes)\n")
     md.append("Actual weeks 21-30 label: " + "; ".join(
         f"{d['tv_show_id']} {d['title']} [{d['category']}]" for d in entry["actual_21_30"]) + "\n")
-    for name, w in variants.items():
-        P, _ = top_k(H.fuse({k: v[row:row + 1] for k, v in norm.items()}, w, td, len(items)), V.fallback)
-        recs = P[0]
+    for name, w in list(variants.items()) + [("FINAL: hybrid + re-ranker", None)]:
+        if w is None:
+            recs = rerank_top5[row]
+        else:
+            P, _ = top_k(H.fuse({k: v[row:row + 1] for k, v in norm.items()}, w, td, len(items)), V.fallback)
+            recs = P[0]
         entry["methods"][name] = {"top5": [dict(describe(i), in_actual=bool(i in set(truth)),
                                                 in_train_history=bool(hist_cnt[i] > 0)) for i in recs],
                                   "AP@5": round(apk(recs, truth), 4)}

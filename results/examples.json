@@ -264,7 +264,7 @@
     ],
     "AP@5": 1.0
    },
-   "hybrid (final)": {
+   "fixed-weight hybrid": {
     "top5": [
      {
       "tv_show_id": 2400480,
@@ -284,6 +284,46 @@
       "tv_show_id": 240081,
       "title": "Факты. День.",
       "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12002896,
+      "title": "М/с 'Вспыш и чудо-машинки', 4 сезон, 5 с. 'Суперогромный приз'.",
+      "category": "Детям",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.8
+   },
+   "FINAL: hybrid + re-ranker": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12002955,
+      "title": "М/с 'Свинка Пеппа', 1 сезон, 11 с. 'Икота'.",
+      "category": "Детям",
       "in_actual": true,
       "in_train_history": true
      },
@@ -571,7 +611,7 @@
     ],
     "AP@5": 0.3333
    },
-   "hybrid (final)": {
+   "fixed-weight hybrid": {
     "top5": [
      {
       "tv_show_id": 2400480,
@@ -605,6 +645,46 @@
       "tv_show_id": 2400508,
       "title": "Сегодня. Итоги с Олегом Панютой.",
       "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.4
+   },
+   "FINAL: hybrid + re-ranker": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 6500479,
+      "title": "'Мир наизнанку'.",
+      "category": "Познавательное",
       "in_actual": false,
       "in_train_history": true
      }

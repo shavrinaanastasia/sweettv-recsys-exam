@@ -15,7 +15,7 @@ Here we try to predict something that the user will WATCH, not something the use
 
 Let's also compare the methods: popularity already has a good result because a lot of users watch the same news and other kinds of regular shows. ALS tries to find more hidden similarities between users. PPR takes into account personal history really good (PPR 0.32 MAP@5 VS ALS 0.29 MAP@5). It happens because a random walk through the graph regularly returns to the programs of a particular user. 
 
-Content filtration is somehow worse than popularity: 0.18 VS 0.22. It is probably due to the fact that the similarity between genres and metadata does not indicate than a person will watch both because they can be on different channels and aat different time. People usually watch TV in the evening, so if the other show is in the morning, they won't see it.
+Content filtration is somehow worse than popularity: 0.18 VS 0.22. It is probably due to the fact that the similarity between genres and metadata does not indicate than a person will watch both because they can be on different channels and aat different time.
 
 The best signal here is channel exposure (the info which channels this user regularly watches). If we delete it, our hybrid model quality will drop by 0.019 MAP@5 (on half B). I suppose it is becuase people usually turn on their favourite channels. 
 

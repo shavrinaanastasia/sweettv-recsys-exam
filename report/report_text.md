@@ -1,6 +1,6 @@
 <<META Student: Anastasia Shavrina (Шаврина Анастасия Олеговна) · Team: Individual · Kaggle: Maizawitch>>
 <<META Email: shavrina157@gmail.com · Date: 2026-10-30 · Assignment: Final exam quiz (FKN) — TV programme recommendation on sweet.tv>>
-<<META Code: <<TODO: paste the GitHub URL after publishing, e.g. https://github.com/shavrinaanastasia/sweettv-recsys-exam>>>>
+<<META Code: https://github.com/shavrinaanastasia/sweettv-recsys-exam>>
 # Repeat Viewing Dominates: Graph, Factorization and Learned Re-ranking for TV Programme Recommendation on sweet.tv
 
 **Abstract** — We predict, for 1,260 sweet.tv users, the five TV programmes they will watch most often in weeks 31-42, given a channel-level view log (weeks 11-30) in which only about 11% of schedule rows carry a programme id. We join views to labelled airings with the host's own "≥ 80% watched" rule, compare a popularity baseline with implicit ALS, content-based filtering and personalized PageRank on one temporal hold-out, and combine them by score fusion followed by a LightGBM LambdaRank re-ranker. The final strategy reaches MAP@5 = 0.352 on untouched validation users (popularity: 0.224) and a returned Kaggle private score of 0.43344 (popularity: 0.28773). The main lesson is that this target rewards predicting repeat viewing on a user's habitual channels; content similarity alone does not even beat popularity.

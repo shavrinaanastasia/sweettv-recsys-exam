@@ -90,7 +90,7 @@ Users were chosen by a fixed rule, not by inspecting results: among validation u
 
 ### 4.2 Kaggle submission
 
-<<TODO: insert the screenshot of the Kaggle Submissions page here (private scores and name visible) — replace this line with ![Fig. 3. Returned Kaggle scores; designated final submission: submission_rerank.csv, private 0.43344.](kaggle_screenshot.png){w=16}>>
+![Fig. 3. Kaggle Submissions page (late submissions, account Maizawitch). Designated final submission: submission_rerank.csv, returned private score 0.43344, public 0.43978. The popularity submission (private 0.28773) is below the visible area; all six scores are in Table 1 and results/kaggle_submissions.csv.](kaggle_screenshot.png){w=15}
 
 The designated final submission is `submissions/submission_rerank.csv` (ref 57803755), chosen on validation before its Kaggle score was known.
 

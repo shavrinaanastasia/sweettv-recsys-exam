@@ -26,13 +26,16 @@ for n, (role, e) in enumerate(ex.items(), start=1):
         out.append(f"| {short[m]} | " + " | ".join(cells) + f" | {r['AP@5']:.3f} |")
     out.append(f"Table {n + 3}: {role.split()[0].capitalize()} viewer, user {e['user_id']} "
                f"({e['train_airings_watched_ge_0_8']} airings watched ≥ 80% in weeks 11-20, "
-               f"{e['distinct_programmes_watched_ge_0_8']} distinct programmes). Bold = in the actual weeks 21-30 "
-               f"label; ⁿ = not watched ≥ 80% by this user in weeks 11-20.")
+               f"{e['distinct_programmes_watched_ge_0_8']} distinct programmes).")
     out.append("")
-out.append("| tv_show_id | Title (from schedule) | Category |")
-out.append("|---|---|---|")
-for i in sorted(titles):
-    out.append(f"| {i} | {titles[i][0]} | {titles[i][1]} |")
+# two side-by-side halves to save vertical space
+ids = sorted(titles)
+half = (len(ids) + 1) // 2
+out.append("| tv_show_id | Title (from schedule) | Category | tv_show_id | Title (from schedule) | Category |")
+out.append("|---|---|---|---|---|---|")
+for a, b in zip(ids[:half], ids[half:] + [None]):
+    right = f"{b} | {titles[b][0]} | {titles[b][1]}" if b else " | | "
+    out.append(f"| {a} | {titles[a][0]} | {titles[a][1]} | {right} |")
 out.append("Table 6: Titles and categories of every programme id in Tables 4-5, looked up from the schedule.")
 (ROOT / "report" / "examples_tables.md").write_text("\n".join(out) + "\n", encoding="utf-8")
 print("\n".join(out))

@@ -1,0 +1,7 @@
+{
+ "_note": "Chosen by highest MAP@5 on validation half A (results/val_runs.log, results/val_run1_stopped.log).",
+ "history": {"decay": false},
+ "cbf": {"sec_weight": 0.0},
+ "ppr": {"restart": 0.3, "min_sec": 1200, "top_n": 0},
+ "als": {"factors": 16, "reg": 30.0, "alpha": 1.0, "weight": "cnt"}
+}

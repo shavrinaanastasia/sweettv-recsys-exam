@@ -1,0 +1,19 @@
+{
+  "labelled_airings_before_dedup": 381892,
+  "labelled_airings": 381892,
+  "view_airing_pairs": 3847696,
+  "user_airing_pairs": 3014129,
+  "pairs_screen_ge_0_8": 615979,
+  "screen_quantiles": {
+    "0.1": 0.015466666780412197,
+    "0.25": 0.043666668236255646,
+    "0.5": 0.195333331823349,
+    "0.75": 0.659494936466217,
+    "0.9": 1.0
+  },
+  "total_view_seconds": 8619215224.0,
+  "seconds_on_labelled_airtime": 4512905117.0,
+  "share_view_seconds_on_labelled_airtime": 0.5235865446814605,
+  "users_with_any_ge_0_8_pair": 4841,
+  "runtime_s": 12.0
+}

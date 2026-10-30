@@ -1,0 +1,86 @@
+[
+ {
+  "A": 0.2614111328125,
+  "B": 0.25470568449377734,
+  "all": 0.2581133167907362,
+  "test_users": 0.284840579710145,
+  "filled_from_popularity": 59,
+  "method": "als",
+  "params": {
+   "factors": 8,
+   "reg": 10.0,
+   "alpha": 1.0
+  },
+  "seconds": 5.5
+ },
+ {
+  "A": 0.27660807291666667,
+  "B": 0.27565926673393887,
+  "all": 0.27614143920595535,
+  "test_users": 0.3037710144927537,
+  "filled_from_popularity": 59,
+  "method": "als",
+  "params": {
+   "factors": 8,
+   "reg": 30.0,
+   "alpha": 1.0
+  },
+  "seconds": 6.2
+ },
+ {
+  "A": 0.2737451171875,
+  "B": 0.2727379751093172,
+  "all": 0.2732497932175352,
+  "test_users": 0.29971304347826094,
+  "filled_from_popularity": 59,
+  "method": "als",
+  "params": {
+   "factors": 8,
+   "reg": 100.0,
+   "alpha": 1.0
+  },
+  "seconds": 5.9
+ },
+ {
+  "A": 0.2579248046875,
+  "B": 0.256991254624958,
+  "all": 0.2574656741108354,
+  "test_users": 0.27868115942028987,
+  "filled_from_popularity": 59,
+  "method": "als",
+  "params": {
+   "factors": 16,
+   "reg": 10.0,
+   "alpha": 1.0
+  },
+  "seconds": 8.4
+ },
+ {
+  "A": 0.2890397135416667,
+  "B": 0.2861856710393542,
+  "all": 0.2876360628618693,
+  "test_users": 0.31201739130434786,
+  "filled_from_popularity": 59,
+  "method": "als",
+  "params": {
+   "factors": 16,
+   "reg": 30.0,
+   "alpha": 1.0
+  },
+  "seconds": 11.4
+ },
+ {
+  "A": 0.27418131510416666,
+  "B": 0.27301547258661285,
+  "all": 0.27360794044665016,
+  "test_users": 0.3001710144927537,
+  "filled_from_popularity": 59,
+  "method": "als",
+  "params": {
+   "factors": 16,
+   "reg": 100.0,
+   "alpha": 1.0
+  },
+  "seconds": 11.0
+ }
+]

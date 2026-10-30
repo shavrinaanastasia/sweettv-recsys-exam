@@ -1,0 +1,170 @@
+[
+ {
+  "A": 0.27726888020833335,
+  "B": 0.27188530104271785,
+  "all": 0.2746211745244003,
+  "test_users": 0.301336231884058,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.15,
+   "min_sec": 300,
+   "top_n": 50
+  },
+  "seconds": 37.6
+ },
+ {
+  "A": 0.32294596354166666,
+  "B": 0.3160006727211571,
+  "all": 0.3195301902398677,
+  "test_users": 0.35725507246376814,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.15,
+   "min_sec": 300,
+   "top_n": 0
+  },
+  "seconds": 141.0
+ },
+ {
+  "A": 0.26688802083333335,
+  "B": 0.26048604103599055,
+  "all": 0.26373945409429284,
+  "test_users": 0.28780289855072466,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.15,
+   "min_sec": 1200,
+   "top_n": 50
+  },
+  "seconds": 36.9
+ },
+ {
+  "A": 0.3224853515625,
+  "B": 0.31528254288597374,
+  "all": 0.31894292803970226,
+  "test_users": 0.35346376811594205,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.15,
+   "min_sec": 1200,
+   "top_n": 0
+  },
+  "seconds": 146.1
+ },
+ {
+  "A": 0.30654459635416664,
+  "B": 0.30132189707366297,
+  "all": 0.3039760132340778,
+  "test_users": 0.3364231884057971,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.3,
+   "min_sec": 300,
+   "top_n": 50
+  },
+  "seconds": 25.1
+ },
+ {
+  "A": 0.31915690104166666,
+  "B": 0.3130390178271107,
+  "all": 0.3161480562448305,
+  "test_users": 0.35643768115942026,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.3,
+   "min_sec": 300,
+   "top_n": 0
+  },
+  "seconds": 142.0
+ },
+ {
+  "A": 0.30266438802083334,
+  "B": 0.2969391187352842,
+  "all": 0.29984863523573196,
+  "test_users": 0.32999420289855075,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.3,
+   "min_sec": 1200,
+   "top_n": 50
+  },
+  "seconds": 32.0
+ },
+ {
+  "A": 0.32391764322916666,
+  "B": 0.318171880255634,
+  "all": 0.3210918114143921,
+  "test_users": 0.3609797101449275,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.3,
+   "min_sec": 1200,
+   "top_n": 0
+  },
+  "seconds": 136.8
+ },
+ {
+  "A": 0.31977539062500004,
+  "B": 0.3135889673730239,
+  "all": 0.3167328370554177,
+  "test_users": 0.35437971014492753,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.5,
+   "min_sec": 300,
+   "top_n": 50
+  },
+  "seconds": 27.3
+ },
+ {
+  "A": 0.31439453124999994,
+  "B": 0.30865623948873194,
+  "all": 0.3115723738626965,
+  "test_users": 0.3527072463768116,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.5,
+   "min_sec": 300,
+   "top_n": 0
+  },
+  "seconds": 115.3
+ },
+ {
+  "A": 0.32142252604166666,
+  "B": 0.3158072653884965,
+  "all": 0.318660876757651,
+  "test_users": 0.3551246376811594,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.5,
+   "min_sec": 1200,
+   "top_n": 50
+  },
+  "seconds": 19.1
+ },
+ {
+  "A": 0.31731770833333334,
+  "B": 0.31170198452741343,
+  "all": 0.3145558312655086,
+  "test_users": 0.3553768115942029,
+  "filled_from_popularity": 29,
+  "method": "ppr",
+  "params": {
+   "restart": 0.5,
+   "min_sec": 1200,
+   "top_n": 0
+  },
+  "seconds": 97.8
+ }
+]

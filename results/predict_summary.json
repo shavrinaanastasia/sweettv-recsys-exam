@@ -1,0 +1,50 @@
+{
+ "pool_size": 6642,
+ "component_seconds": {
+  "popularity": 0.0,
+  "history": 0.0,
+  "cbf": 0.3,
+  "ppr": 41.2,
+  "als": 5.7,
+  "channel": 0.2
+ },
+ "weights": {
+  "popularity": 0.05,
+  "history": 0.75,
+  "cbf": 0.1,
+  "ppr": 1.5,
+  "als": 0.5,
+  "channel": 2.0
+ },
+ "files": {
+  "popularity": {
+   "path": "submissions\\submission_popularity.csv",
+   "rows_filled_from_popularity": 0
+  },
+  "history": {
+   "path": "submissions\\submission_history.csv",
+   "rows_filled_from_popularity": 22
+  },
+  "cbf": {
+   "path": "submissions\\submission_cbf.csv",
+   "rows_filled_from_popularity": 4
+  },
+  "ppr": {
+   "path": "submissions\\submission_ppr.csv",
+   "rows_filled_from_popularity": 2
+  },
+  "als": {
+   "path": "submissions\\submission_als.csv",
+   "rows_filled_from_popularity": 4
+  },
+  "channel": {
+   "path": "submissions\\submission_channel.csv",
+   "rows_filled_from_popularity": 1
+  },
+  "hybrid": {
+   "path": "submissions\\submission_hybrid.csv",
+   "rows_filled_from_popularity": 0
+  }
+ },
+ "runtime_s": 52.0
+}

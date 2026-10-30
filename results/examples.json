@@ -1,0 +1,616 @@
+{
+ "heavy (p90)": {
+  "user_id": "8377619604347126107",
+  "role": "heavy (p90)",
+  "train_airings_watched_ge_0_8": 179,
+  "distinct_programmes_watched_ge_0_8": 22,
+  "train_top5": [
+   {
+    "tv_show_id": 2400480,
+    "title": "'ТСН. Неделя'.",
+    "category": "Инфо",
+    "count": 59
+   },
+   {
+    "tv_show_id": 240081,
+    "title": "Факты. День.",
+    "category": "Инфо",
+    "count": 22
+   },
+   {
+    "tv_show_id": 12002955,
+    "title": "М/с 'Свинка Пеппа', 1 сезон, 11 с. 'Икота'.",
+    "category": "Детям",
+    "count": 19
+   },
+   {
+    "tv_show_id": 200338,
+    "title": "Готовим вместе.",
+    "category": "Познавательное",
+    "count": 12
+   },
+   {
+    "tv_show_id": 20088,
+    "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+    "category": "Развлечения",
+    "count": 10
+   }
+  ],
+  "actual_21_30": [
+   {
+    "tv_show_id": 2400480,
+    "title": "'ТСН. Неделя'.",
+    "category": "Инфо"
+   },
+   {
+    "tv_show_id": 2400508,
+    "title": "Сегодня. Итоги с Олегом Панютой.",
+    "category": "Инфо"
+   },
+   {
+    "tv_show_id": 240081,
+    "title": "Факты. День.",
+    "category": "Инфо"
+   },
+   {
+    "tv_show_id": 20088,
+    "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+    "category": "Развлечения"
+   },
+   {
+    "tv_show_id": 12002955,
+    "title": "М/с 'Свинка Пеппа', 1 сезон, 11 с. 'Икота'.",
+    "category": "Детям"
+   }
+  ],
+  "methods": {
+   "popularity": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12001682,
+      "title": "М/с 'Губка Боб Квадратные Штаны', 89 с. 'Красти Губка'.",
+      "category": "Детям",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.6433
+   },
+   "history (reference)": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12002955,
+      "title": "М/с 'Свинка Пеппа', 1 сезон, 11 с. 'Икота'.",
+      "category": "Детям",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 200338,
+      "title": "Готовим вместе.",
+      "category": "Познавательное",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.76
+   },
+   "M1 ALS": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12002955,
+      "title": "М/с 'Свинка Пеппа', 1 сезон, 11 с. 'Икота'.",
+      "category": "Детям",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 200344,
+      "title": "'Чистоnews'.",
+      "category": "Развлечения",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.8
+   },
+   "M2 content-based": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2500261,
+      "title": "Подробности недели.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 5900347,
+      "title": "'Деньги'.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 2400467,
+      "title": "'Викна-Новости'.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.4
+   },
+   "M3 PPR": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12002955,
+      "title": "М/с 'Свинка Пеппа', 1 сезон, 11 с. 'Икота'.",
+      "category": "Детям",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 1.0
+   },
+   "hybrid (final)": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12002955,
+      "title": "М/с 'Свинка Пеппа', 1 сезон, 11 с. 'Икота'.",
+      "category": "Детям",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12002896,
+      "title": "М/с 'Вспыш и чудо-машинки', 4 сезон, 5 с. 'Суперогромный приз'.",
+      "category": "Детям",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.8
+   }
+  }
+ },
+ "light (p10)": {
+  "user_id": "2593914277176566399",
+  "role": "light (p10)",
+  "train_airings_watched_ge_0_8": 17,
+  "distinct_programmes_watched_ge_0_8": 13,
+  "train_top5": [
+   {
+    "tv_show_id": 2400480,
+    "title": "'ТСН. Неделя'.",
+    "category": "Инфо",
+    "count": 3
+   },
+   {
+    "tv_show_id": 6500479,
+    "title": "'Мир наизнанку'.",
+    "category": "Познавательное",
+    "count": 3
+   },
+   {
+    "tv_show_id": 20088,
+    "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+    "category": "Развлечения",
+    "count": 1
+   },
+   {
+    "tv_show_id": 90081118,
+    "title": "Х/ф 'Титан'.",
+    "category": "Фильмы",
+    "count": 1
+   },
+   {
+    "tv_show_id": 90057599,
+    "title": "Х/ф 'Ангелы Чарли 2: Только вперед'.",
+    "category": "Фильмы",
+    "count": 1
+   }
+  ],
+  "actual_21_30": [
+   {
+    "tv_show_id": 20088,
+    "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+    "category": "Развлечения"
+   },
+   {
+    "tv_show_id": 2400480,
+    "title": "'ТСН. Неделя'.",
+    "category": "Инфо"
+   },
+   {
+    "tv_show_id": 90077275,
+    "title": "Х/ф 'Миллион способов потерять голову'.",
+    "category": "Фильмы"
+   },
+   {
+    "tv_show_id": 400455,
+    "title": "Любовь на выживание, 4 сезон, 5 эп.",
+    "category": "Познавательное"
+   },
+   {
+    "tv_show_id": 90079862,
+    "title": "Х/ф 'Глубоководный горизонт'.",
+    "category": "Фильмы"
+   }
+  ],
+  "methods": {
+   "popularity": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 12001682,
+      "title": "М/с 'Губка Боб Квадратные Штаны', 89 с. 'Красти Губка'.",
+      "category": "Детям",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.3
+   },
+   "history (reference)": {
+    "top5": [
+     {
+      "tv_show_id": 6500479,
+      "title": "'Мир наизнанку'.",
+      "category": "Познавательное",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 90072234,
+      "title": "Х/ф 'Социальная сеть'.",
+      "category": "Фильмы",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 90057599,
+      "title": "Х/ф 'Ангелы Чарли 2: Только вперед'.",
+      "category": "Фильмы",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.2
+   },
+   "M1 ALS": {
+    "top5": [
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 2400467,
+      "title": "'Викна-Новости'.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     }
+    ],
+    "AP@5": 0.4
+   },
+   "M2 content-based": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 5900347,
+      "title": "'Деньги'.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 2400467,
+      "title": "'Викна-Новости'.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 2500261,
+      "title": "Подробности недели.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     }
+    ],
+    "AP@5": 0.2
+   },
+   "M3 PPR": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 6500479,
+      "title": "'Мир наизнанку'.",
+      "category": "Познавательное",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 400363,
+      "title": "От пацанки до панянки, 4 сезон, 15 эп.",
+      "category": "Развлечения",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 90021962,
+      "title": "Х/ф 'Эйс Вентура: Когда зовёт природа'.",
+      "category": "Фильмы",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.3333
+   },
+   "hybrid (final)": {
+    "top5": [
+     {
+      "tv_show_id": 2400480,
+      "title": "'ТСН. Неделя'.",
+      "category": "Инфо",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 20088,
+      "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+      "category": "Развлечения",
+      "in_actual": true,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 6500479,
+      "title": "'Мир наизнанку'.",
+      "category": "Познавательное",
+      "in_actual": false,
+      "in_train_history": true
+     },
+     {
+      "tv_show_id": 240081,
+      "title": "Факты. День.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": false
+     },
+     {
+      "tv_show_id": 2400508,
+      "title": "Сегодня. Итоги с Олегом Панютой.",
+      "category": "Инфо",
+      "in_actual": false,
+      "in_train_history": true
+     }
+    ],
+    "AP@5": 0.4
+   }
+  }
+ }
+}

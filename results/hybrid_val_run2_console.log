@@ -1,0 +1,71 @@
+﻿  component popularity: 0.1 s
+  component history: 0.0 s
+  component cbf: 1.2 s
+  component ppr: 114.1 s
+  component als: 4.5 s
+  component channel: 0.5 s
+popularity {'A': 0.22255371093749998, 'B': 0.22435418768920287, 'all': 0.223439205955335, 'test_users': 0.24863768115942028}
+history {'A': 0.3104768880208333, 'B': 0.30290447359569456, 'all': 0.30675268817204304, 'test_users': 0.3468463768115942}
+cbf {'A': 0.18706705729166667, 'B': 0.18305919946182309, 'all': 0.185095947063689, 'test_users': 0.20357101449275364}
+ppr {'A': 0.32391764322916666, 'B': 0.318171880255634, 'all': 0.3210918114143921, 'test_users': 0.3609797101449275}
+als {'A': 0.2890397135416667, 'B': 0.2861856710393542, 'all': 0.2876360628618693, 'test_users': 0.31201739130434786}
+channel {'A': 0.322734375, 'B': 0.3191708711738984, 'all': 0.3209818031430935, 'test_users': 0.3476985507246377}
+  A=0.3211 {'popularity': 0.05, 'history': 1.0, 'cbf': 0.0, 'ppr': 0.0, 'als': 0.0, 'channel': 0.0}
+  A=0.3213 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 0.0, 'als': 0.0, 'channel': 0.0}
+  A=0.3215 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 0.05, 'als': 0.0, 'channel': 0.0}
+  A=0.3215 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 0.5, 'als': 0.0, 'channel': 0.0}
+  A=0.3221 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 0.75, 'als': 0.0, 'channel': 0.0}
+  A=0.3221 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 1.0, 'als': 0.0, 'channel': 0.0}
+  A=0.3229 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 1.5, 'als': 0.0, 'channel': 0.0}
+  A=0.3230 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 3.0, 'als': 0.0, 'channel': 0.0}
+  A=0.3232 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 4.0, 'als': 0.0, 'channel': 0.0}
+  A=0.3238 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 0.0, 'channel': 0.0}
+  A=0.3238 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 0.05, 'channel': 0.0}
+  A=0.3241 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 0.1, 'channel': 0.0}
+  A=0.3245 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 0.2, 'channel': 0.0}
+  A=0.3252 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 0.3, 'channel': 0.0}
+  A=0.3260 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 0.5, 'channel': 0.0}
+  A=0.3276 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 0.75, 'channel': 0.0}
+  A=0.3289 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 1.0, 'channel': 0.0}
+  A=0.3300 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 1.5, 'channel': 0.0}
+  A=0.3302 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 0.0}
+  A=0.3308 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 0.05}
+  A=0.3313 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 0.1}
+  A=0.3317 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 0.2}
+  A=0.3319 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 0.3}
+  A=0.3333 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 0.5}
+  A=0.3347 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 0.75}
+  A=0.3352 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 1.0}
+  A=0.3365 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 1.5}
+  A=0.3382 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 2.0}
+  A=0.3425 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 3.0}
+  A=0.3448 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 4.0}
+  A=0.3469 {'popularity': 0.05, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 6.0}
+  A=0.3470 {'popularity': 0.0, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 6.0}
+  A=0.3474 {'popularity': 0.2, 'history': 0.75, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 6.0}
+  A=0.3474 {'popularity': 0.2, 'history': 1.5, 'cbf': 0.0, 'ppr': 6.0, 'als': 2.0, 'channel': 6.0}
+  A=0.3475 {'popularity': 0.2, 'history': 1.5, 'cbf': 0.05, 'ppr': 6.0, 'als': 2.0, 'channel': 6.0}
+  A=0.3476 {'popularity': 0.2, 'history': 1.5, 'cbf': 0.05, 'ppr': 3.0, 'als': 2.0, 'channel': 6.0}
+  A=0.3477 {'popularity': 0.2, 'history': 1.5, 'cbf': 0.1, 'ppr': 3.0, 'als': 2.0, 'channel': 6.0}
+{
+ "weights": {
+  "popularity": 0.2,
+  "history": 1.5,
+  "cbf": 0.1,
+  "ppr": 3.0,
+  "als": 2.0,
+  "channel": 6.0
+ },
+ "A": 0.34766764322916666,
+ "B": 0.3405062226707031,
+ "all": 0.3441455748552523,
+ "test_users": 0.37563188405797104
+}
+{
+ "without_popularity": 0.3400958627648839,
+ "without_history": 0.3383316515304406,
+ "without_cbf": 0.3406996300033636,
+ "without_ppr": 0.3361469895728221,
+ "without_als": 0.3401278170198453,
+ "without_channel": 0.32392028254288596
+}

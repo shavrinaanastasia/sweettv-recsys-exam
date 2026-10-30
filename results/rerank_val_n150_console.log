@@ -1,0 +1,15 @@
+﻿  component popularity: 0.0 s
+  component history: 0.0 s
+  component cbf: 0.9 s
+  component ppr: 99.2 s
+  component als: 3.0 s
+  component channel: 0.3 s
+{'mode': 'val', 'fit_split': 'fit_val', 'fit_users': 3788, 'fit_candidate_recall@50': 0.7747096092925028}
+  component popularity: 0.0 s
+  component history: 0.0 s
+  component cbf: 0.9 s
+  component ppr: 102.5 s
+  component als: 4.0 s
+  component channel: 0.4 s
+small {'A': 0.356337890625, 'B': 0.35240665993945514, 'all': 0.35440446650124074, 'test_users': 0.39331014492753624, 'top_features_gain': {'fused_rank': 0.5463, 'fused': 0.1926, 'norm_channel': 0.0588, 'raw_popularity': 0.0182, 'raw_ppr': 0.018, 'rank_channel': 0.0157, 'airing_ratio': 0.0142, 'log_sec': 0.0142, 'target_airings': 0.0136, 'user_total_cnt': 0.0125}}
+large {'A': 0.3539143880208333, 'B': 0.3504675412041709, 'all': 0.3522191894127378, 'test_users': 0.3902724637681159, 'top_features_gain': {'fused_rank': 0.4955, 'fused': 0.1786, 'norm_channel': 0.0594, 'raw_popularity': 0.0193, 'user_total_cnt': 0.017, 'log_sec': 0.0162, 'airing_ratio': 0.016, 'rank_channel': 0.016, 'user_log_sec': 0.0155, 'target_airings': 0.0145}}

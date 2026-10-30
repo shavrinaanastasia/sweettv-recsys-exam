@@ -1,0 +1,12 @@
+# Run 1 of validate.py (pop hist cbf ppr), full (unsparsified) co-view graph.
+# Stopped by hand after the first PPR grid point because one PPR run took 452.8 s.
+# Lines below are copied verbatim from the run's console output (recorded in the session log).
+val users: 4030 (A=2048, B=1982, test users among them=1150)
+{"A": 0.22255371093749998, "B": 0.22435418768920287, "all": 0.223439205955335, "test_users": 0.24863768115942028, "filled_from_popularity": 0, "method": "popularity", "params": {}, "seconds": 0.9}
+{"A": 0.3104768880208333, "B": 0.30290447359569456, "all": 0.30675268817204304, "test_users": 0.3468463768115942, "filled_from_popularity": 246, "method": "history", "params": {"decay": false}, "seconds": 0.9}
+{"A": 0.30993489583333333, "B": 0.30159266733938783, "all": 0.3058320926385443, "test_users": 0.3454115942028986, "filled_from_popularity": 246, "method": "history", "params": {"decay": true}, "seconds": 1.0}
+content vocab size: 17193
+{"A": 0.18706705729166667, "B": 0.18305919946182309, "all": 0.185095947063689, "test_users": 0.20357101449275364, "filled_from_popularity": 59, "method": "cbf", "params": {"sec_weight": 0.0}, "seconds": 2.1}
+{"A": 0.14996256510416667, "B": 0.1463403969054827, "all": 0.14818114143920594, "test_users": 0.16250724637681158, "filled_from_popularity": 29, "method": "cbf", "params": {"sec_weight": 0.1}, "seconds": 2.4}
+{"A": 0.07316569010416668, "B": 0.06667843928691557, "all": 0.06997518610421836, "test_users": 0.06982608695652175, "filled_from_popularity": 29, "method": "cbf", "params": {"sec_weight": 0.5}, "seconds": 2.3}
+{"A": 0.32294596354166666, "B": 0.3160006727211571, "all": 0.3195301902398677, "test_users": 0.35725507246376814, "filled_from_popularity": 29, "method": "ppr", "params": {"restart": 0.15, "min_sec": 300}, "seconds": 452.8}

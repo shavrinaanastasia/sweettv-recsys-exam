@@ -1,0 +1,5 @@
+# Competition data may not be redistributed (Kaggle competition rules); download it with the Kaggle CLI.
+data/
+cache/
+__pycache__/
+*.pyc

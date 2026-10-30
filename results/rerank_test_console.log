@@ -1,0 +1,14 @@
+﻿  component popularity: 0.0 s
+  component history: 0.0 s
+  component cbf: 0.9 s
+  component ppr: 103.9 s
+  component als: 3.7 s
+  component channel: 0.4 s
+{'mode': 'test', 'fit_split': 'val', 'fit_users': 4030, 'fit_candidate_recall@50': 0.7670967741935485}
+  component popularity: 0.0 s
+  component history: 0.0 s
+  component cbf: 0.4 s
+  component ppr: 35.6 s
+  component als: 4.9 s
+  component channel: 0.1 s
+{'mode': 'test', 'fit_split': 'val', 'fit_users': 4030, 'fit_candidate_recall@50': 0.7670967741935485, 'config': 'small', 'file': 'submissions\\submission_rerank.csv', 'runtime_s': 183.2}

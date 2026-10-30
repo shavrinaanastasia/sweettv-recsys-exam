@@ -1,0 +1,9 @@
+{
+ "mode": "test",
+ "fit_split": "val",
+ "fit_users": 4030,
+ "fit_candidate_recall@50": 0.7670967741935485,
+ "config": "small",
+ "file": "submissions\\submission_rerank.csv",
+ "runtime_s": 183.2
+}

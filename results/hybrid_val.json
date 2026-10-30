@@ -1,0 +1,391 @@
+{
+ "component_seconds": {
+  "popularity": 0.0,
+  "history": 0.0,
+  "cbf": 1.1,
+  "ppr": 116.4,
+  "als": 3.9,
+  "channel": 0.5
+ },
+ "single": {
+  "popularity": {
+   "A": 0.22255371093749998,
+   "B": 0.22435418768920287,
+   "all": 0.223439205955335,
+   "test_users": 0.24863768115942028
+  },
+  "history": {
+   "A": 0.3104768880208333,
+   "B": 0.30290447359569456,
+   "all": 0.30675268817204304,
+   "test_users": 0.3468463768115942
+  },
+  "cbf": {
+   "A": 0.18706705729166667,
+   "B": 0.18305919946182309,
+   "all": 0.185095947063689,
+   "test_users": 0.20357101449275364
+  },
+  "ppr": {
+   "A": 0.32391764322916666,
+   "B": 0.318171880255634,
+   "all": 0.3210918114143921,
+   "test_users": 0.3609797101449275
+  },
+  "als": {
+   "A": 0.2890397135416667,
+   "B": 0.2861856710393542,
+   "all": 0.2876360628618693,
+   "test_users": 0.31201739130434786
+  },
+  "channel": {
+   "A": 0.322734375,
+   "B": 0.3191708711738984,
+   "all": 0.3209818031430935,
+   "test_users": 0.3476985507246377
+  }
+ },
+ "hybrid": {
+  "weights": {
+   "popularity": 0.05,
+   "history": 0.75,
+   "cbf": 0.1,
+   "ppr": 1.5,
+   "als": 0.5,
+   "channel": 2.0
+  },
+  "A": 0.34837890625,
+  "B": 0.34204843592330975,
+  "all": 0.34526550868486355,
+  "test_users": 0.3809507246376812
+ },
+ "trace": [
+  {
+   "weights": {
+    "popularity": 0.0,
+    "history": 1.0,
+    "cbf": 0.0,
+    "ppr": 0.0,
+    "als": 0.0,
+    "channel": 0.0
+   },
+   "A": 0.3104768880208333
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 1.0,
+    "cbf": 0.0,
+    "ppr": 0.0,
+    "als": 0.0,
+    "channel": 0.0
+   },
+   "A": 0.3211149088541667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 0.0,
+    "als": 0.0,
+    "channel": 0.0
+   },
+   "A": 0.32132812499999996
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 0.05,
+    "als": 0.0,
+    "channel": 0.0
+   },
+   "A": 0.32145345052083335
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 0.5,
+    "als": 0.0,
+    "channel": 0.0
+   },
+   "A": 0.32151692708333335
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 0.75,
+    "als": 0.0,
+    "channel": 0.0
+   },
+   "A": 0.32206380208333335
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.0,
+    "als": 0.0,
+    "channel": 0.0
+   },
+   "A": 0.32207845052083334
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 0.0,
+    "channel": 0.0
+   },
+   "A": 0.32290201822916664
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 0.05,
+    "channel": 0.0
+   },
+   "A": 0.32423014322916666
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 0.1,
+    "channel": 0.0
+   },
+   "A": 0.32508951822916665
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 0.2,
+    "channel": 0.0
+   },
+   "A": 0.3262858072916667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 0.3,
+    "channel": 0.0
+   },
+   "A": 0.3279833984375
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 0.5,
+    "channel": 0.0
+   },
+   "A": 0.3295166015625
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 0.75,
+    "channel": 0.0
+   },
+   "A": 0.33044759114583333
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 0.0
+   },
+   "A": 0.33073079427083335
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 0.05
+   },
+   "A": 0.33188151041666664
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 0.1
+   },
+   "A": 0.33230631510416664
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 0.2
+   },
+   "A": 0.3338151041666667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 0.3
+   },
+   "A": 0.3353092447916667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 0.5
+   },
+   "A": 0.3376253255208333
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 0.75
+   },
+   "A": 0.33928222656249996
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 1.0
+   },
+   "A": 0.34131022135416667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 1.5
+   },
+   "A": 0.34541829427083337
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.0,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 2.0
+   },
+   "A": 0.3466324869791667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.5,
+    "ppr": 1.5,
+    "als": 1.0,
+    "channel": 2.0
+   },
+   "A": 0.34734537760416667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.5,
+    "ppr": 1.5,
+    "als": 0.3,
+    "channel": 2.0
+   },
+   "A": 0.3473942057291667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.5,
+    "ppr": 1.5,
+    "als": 0.5,
+    "channel": 2.0
+   },
+   "A": 0.3478238932291667
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.05,
+    "ppr": 1.5,
+    "als": 0.5,
+    "channel": 2.0
+   },
+   "A": 0.34793945312499996
+  },
+  {
+   "weights": {
+    "popularity": 0.05,
+    "history": 0.75,
+    "cbf": 0.1,
+    "ppr": 1.5,
+    "als": 0.5,
+    "channel": 2.0
+   },
+   "A": 0.34837890625
+  }
+ ],
+ "ablation_B": {
+  "without_popularity": 0.3419038008745375,
+  "without_history": 0.34043390514631683,
+  "without_cbf": 0.3414917591658258,
+  "without_ppr": 0.33838210561722165,
+  "without_als": 0.3420820719811638,
+  "without_channel": 0.32300706357214937
+ }
+}

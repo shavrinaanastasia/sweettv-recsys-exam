@@ -1,0 +1,14 @@
+﻿ref,fileName,date,description,status,publicScore,privateScore
+
+57803755,submission_rerank.csv,2026-10-30 11:26:52.533000,Шаврина Анастасия Олеговна & Maizawitch,SubmissionStatus.COMPLETE,0.43978,0.43344
+
+57784332,submission_hybrid.csv,2026-10-29 22:49:06.350000,Шаврина Анастасия Олеговна & Maizawitch,SubmissionStatus.COMPLETE,0.44153,0.42921
+
+57784330,submission_ppr.csv,2026-10-29 22:49:00.893000,Шаврина Анастасия Олеговна & Maizawitch,SubmissionStatus.COMPLETE,0.39959,0.38530
+
+57784328,submission_als.csv,2026-10-29 22:48:55.427000,Шаврина Анастасия Олеговна & Maizawitch,SubmissionStatus.COMPLETE,0.37750,0.36917
+
+57784326,submission_cbf.csv,2026-10-29 22:48:50.157000,Шаврина Анастасия Олеговна & Maizawitch,SubmissionStatus.COMPLETE,0.22711,0.21839
+
+57784322,submission_popularity.csv,2026-10-29 22:48:39.167000,Шаврина Анастасия Олеговна & Maizawitch,SubmissionStatus.COMPLETE,0.30344,0.28773
+

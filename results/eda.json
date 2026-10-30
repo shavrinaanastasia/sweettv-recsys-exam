@@ -1,0 +1,170 @@
+{
+  "views": {
+    "rows": 5821987,
+    "users": 4914,
+    "channels": 202,
+    "weeks": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "duraton_equals_stop_minus_start_share": 0.9999799037682495,
+    "duraton_quantiles_s": {
+      "0.1": 80.0,
+      "0.25": 133.0,
+      "0.5": 396.0,
+      "0.75": 1452.0,
+      "0.9": 3911.0,
+      "0.99": 14079.139999999665
+    },
+    "duraton_max_s": 342145,
+    "duraton_min_s": 61
+  },
+  "schedule": {
+    "11-20": {
+      "rows": 1074235,
+      "labelled_rows": 115613,
+      "labelled_share": 0.10762356467625799,
+      "labelled_airtime_share": 0.1596634144965732,
+      "distinct_programmes": 5847,
+      "channels": 400,
+      "channels_with_labelled_rows": 177,
+      "categories": [
+        "Детям",
+        "Другое",
+        "Инфо",
+        "Познавательное",
+        "Развлечения",
+        "Сериалы",
+        "Спорт",
+        "Фильмы"
+      ],
+      "weeks": [
+        10,
+        21
+      ],
+      "programme_duration_quantiles_s": {
+        "0.1": 600.0,
+        "0.5": 2700.0,
+        "0.9": 7200.0
+      }
+    },
+    "21-30": {
+      "rows": 1074394,
+      "labelled_rows": 121505,
+      "labelled_share": 0.11309165911202036,
+      "labelled_airtime_share": 0.16899980564172434,
+      "distinct_programmes": 6363,
+      "channels": 403,
+      "channels_with_labelled_rows": 188,
+      "categories": [
+        "Детям",
+        "Другое",
+        "Инфо",
+        "Познавательное",
+        "Развлечения",
+        "Сериалы",
+        "Спорт",
+        "Фильмы"
+      ],
+      "weeks": [
+        21,
+        31
+      ],
+      "programme_duration_quantiles_s": {
+        "0.1": 600.0,
+        "0.5": 2700.0,
+        "0.9": 7200.0
+      }
+    },
+    "31-42": {
+      "rows": 1295378,
+      "labelled_rows": 144774,
+      "labelled_share": 0.11176197218109309,
+      "labelled_airtime_share": 0.16672061292721319,
+      "distinct_programmes": 6636,
+      "channels": 404,
+      "channels_with_labelled_rows": 191,
+      "categories": [
+        "Детям",
+        "Другое",
+        "Инфо",
+        "Познавательное",
+        "Развлечения",
+        "Сериалы",
+        "Спорт",
+        "Фильмы"
+      ],
+      "weeks": [
+        31,
+        43
+      ],
+      "programme_duration_quantiles_s": {
+        "0.1": 600.0,
+        "0.5": 2700.0,
+        "0.9": 7200.0
+      }
+    }
+  },
+  "item_overlap": {
+    "test_items": 6636,
+    "test_items_seen_in_train_schedule": 5199,
+    "val_items": 6363,
+    "val_items_seen_in_11_20_schedule": 3976
+  },
+  "metadata_consistency_share_items_with_single_value": {
+    "category": 1.0,
+    "genre_1": 0.9916244442146623,
+    "genre_2": 0.9822148691965671,
+    "genre_3": 0.9887291903629407,
+    "year": 0.998655774997415,
+    "director": 0.984076103815531,
+    "actors": 0.9818012615034639
+  },
+  "metadata_nonempty_share_items": {
+    "category": 1.0,
+    "genre_1": 0.9761141557232964,
+    "genre_2": 0.5918726088305243,
+    "genre_3": 0.21590321579981386,
+    "year": 0.9985523730741391,
+    "director": 0.9791128114982939,
+    "actors": 0.9847999172784614
+  },
+  "views_on_scheduled_channels_share": 0.9804913683249379,
+  "test_users": {
+    "count": 1260,
+    "unique": 1260,
+    "present_in_view_log": 1260,
+    "template_first_row": "[np.uint64(8377619604347126107), '0 0 0 0 0']",
+    "views_rows": 2173313,
+    "present_in_weeks_21_30": 1246,
+    "present_in_weeks_11_20": 1256
+  },
+  "all_users_present_in_weeks_21_30": 4820,
+  "clock_alignment_view_start_within_60s_of_programme_start": {
+    "-3": 0.0356,
+    "-2": 0.0361,
+    "-1": 0.0352,
+    "0": 0.0373,
+    "1": 0.0337,
+    "2": 0.033,
+    "3": 0.0329
+  }
+}

@@ -1,0 +1,5 @@
+{
+ "config": "small",
+ "n_cand": 150,
+ "reason": "Highest MAP@5 on validation half A among 4 settings: n50-small 0.35390, n50-large 0.35462, n150-small 0.35630, n150-large 0.35390 (results/rerank_val_n50.json, results/rerank_val_n150.json)."
+}

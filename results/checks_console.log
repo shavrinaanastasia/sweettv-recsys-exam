@@ -1,0 +1,43 @@
+﻿{
+ "apk_slide_example": {
+  "method_X": 0.9167,
+  "expected_X": 0.917,
+  "method_Y": 0.5333,
+  "expected_Y": 0.533,
+  "pass": true
+ },
+ "join_recomputed_from_raw_csv": {
+  "user_id": "22263144883588864",
+  "channel_id": 7,
+  "tv_show_id": 90081928,
+  "title": "Х/ф 'Псы под прикрытием'.",
+  "airing_start_epoch_s": 1586170800,
+  "duration_s": 6000,
+  "overlap_join_py": 5973,
+  "overlap_raw_csv": 5973,
+  "pass": true
+ },
+ "labels": {
+  "users": 4030,
+  "all_have_5_distinct": true,
+  "all_items_watched_ge_0_8": true
+ },
+ "als_objective_by_iteration": {
+  "losses": [
+   49592.98,
+   30056.2,
+   28067.72,
+   27309.65,
+   26893.92,
+   26626.99
+  ],
+  "monotone_non_increasing": true
+ },
+ "ppr": {
+  "transition_rows_sum_to_1_or_0": true,
+  "score_mass_range_first_50_users": [
+   1.0000001192092896,
+   1.000000238418579
+  ]
+ }
+}
